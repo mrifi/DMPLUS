@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
    <title>DM+</title>
 </head>
 
@@ -50,58 +51,67 @@
                edad(años)). Dichos datos no se guardaran en la base de datos, solo sirven para dar
                un resultado al usuario y no para entrenar el algoritmo.
               -->
-         <h4>A continuación se presentara el siguente formulario para predecir el nivel de glucosa en sangre en pacientes embarazadas, </h4>
-         <h4>para obtener resultados coherentes es necesario introducir los siguente datos como se indica a continuación:</h4>
+         <h4>A continuación se presentara el siguente formulario para predecir el nivel de glucosa en sangre en
+            pacientes embarazadas, </h4>
+         <h4>para obtener resultados coherentes es necesario introducir los siguente datos como se indica a
+            continuación:</h4>
          <p>Numero de embarazos: Numero de veces que la paciente a estado embarazada. </p>
-         <p>Presión arterial(mmHe): La presión diastólica en sangre.  </p>
+         <p>Presión arterial(mmHe): La presión diastólica en sangre. </p>
          <p>Grosor de piel(mm): Es el grosor de piel del triceps. </p>
          <!-- <p>Insulina(muU/ml): </p>-->
          <p>Peso(kg): Peso actual del paciente en ayunas. </p>
          <p>Altura(cm): Altura actual del paciente. </p>
          <!-- <p>Historial familiar de diabetes (%):</p> -->
          <p>Edad(años): Edad actual del paciente.</p>
-         <form>
-            <h3 id="formulario">FORMULARIO</h3>
-            <label for="number">Numero de embarazos</label>
-            <input id="number" type="number" placeholder="" value="0">
-
-            <br>
-            <br>
-
-            <label for="arterial">Presion arterial (mmHg)</label>
-            <input id="arterial" type="number" placeholder="" value="0">
-
-
-            <br>
-            <br>
-
-            <label for="piel">Grosor de piel (mm)</label>
-            <input id="piel" type="number" value="0">
-
-
-            <br>
-            <br>
-
-            <label for="peso">Peso (Kg)</label>
-            <input id="peso" type="number" value="0">
-
-
-            <br>
-            <br>
-
-            <label for="altura">Altura (cm)</label>
-            <input id="altura" type="number" value="0">
-
-            <br>
-            <br>
-
-
-            <label for="años">Edad (años)</label>
-            <input id="años" type="number" value="0">
-
-            <br>
-            <!--crar un alert para confirmar si los datos introducidos son correctos o no-->
-            <button>Enviar</button>
+         <div>
+            <form>
+               <h3 id="formulario">FORMULARIO</h3>
+               <div class="linea">
+                  <div class="cubo">
+                     <label for="number">Numero de embarazos</label>
+                     <input id="number" type="number" placeholder="" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="glucosa">Nivel de glucosa (mg/dl)</label>
+                     <input id="glucosa" type="number" placeholder="" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="arterial">Presion arterial (mmHg)</label>
+                     <input id="arterial" type="number" placeholder="" value="0">
+                  </div>
+               </div>
+               <div class="linea">
+                  <div class="cubo">
+                     <label for="piel">Grosor de piel (mm)</label>
+                     <input id="piel" type="number" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="insulina">Nivel de insulina (mu U/ml)</label>
+                     <input id="insulina" type="number" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="peso">Peso (Kg)</label>
+                     <input id="peso" type="number" value="0">
+                  </div>
+               </div>
+               <div class="linea">
+                  <div class="cubo">
+                     <label for="altura">Altura (cm)</label>
+                     <input id="altura" type="number" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="diabetes">Historial familiar diabetes (%)</label>
+                     <input id="diabetes" type="number" value="0">
+                  </div>
+                  <div class="cubo">
+                     <label for="años">Edad (años)</label>
+                     <input id="años" type="number" value="0">
+                  </div>
+               </div> <button>Enviar</button>
+            </form>
+         </div>
+         <!--crar un alert para confirmar si los datos introducidos son correctos o no-->
+         <button>Enviar</button>
          </form>
          <h1 id="infocontact">INFORMACIÓN Y CONTACTO</h1>
          <div>

@@ -1,0 +1,11 @@
+.linea{ 
+    text-align: center; 
+    border: 1px solid black; 
+    padding: 20px; 
+    margin-left: 10px ; 
+    margin-right: 10px; 
+} 
+.cubo{ 
+    display: inline-block; 
+    border: blueviolet 2px solid; 
+}
