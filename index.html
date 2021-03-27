@@ -1,132 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>DM+</title>
 </head>
+
 <body>
    <center>
       <h1>welcome to DM+</h1>
       <figure>
          <img height="500" width="1200" src="img/pregnant.jpg">
-     </figure>
+      </figure>
       <p>Sabias que La diabetes gestacional es
-         un tipo de diabetes que aparece por 
-         primera vez durante el embarazo en mujeres
-         embarazadas que nunca antes padecieron esta enfermedad.
+         un tipo de diabetes que aparece por
+         primera vez durante el embarazo en mujeres</p>
+
+      <p> embarazadas que nunca antes padecieron esta enfermedad.
          En algunas mujeres, la diabetes gestacional puede afectarles
-         en más de un embarazo. La diabetes gestacional por lo general
+         en más de un embarazo.</p>
+
+      <p> La diabetes gestacional por lo general
          aparece a la mitad del embarazo.</p>
+      <br>
+      <br>
+      <center>
+
+         <a href="#instrucciones"><button onclick="">INSTRUCCIONES</button></a>
          <br>
          <br>
-         <center>
-            
-            <button onclick="">INSTRUCCIONES</button>
-            <br>
-            <br>
-            <a href="#formulario">FORMULARIÓ</a>
-            <!--<button>FORMULARIÓ</button> -->
-            <br>
-            <br>
-            <button>INFORMACIÓN</button>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-         </center>
+         <a href="#formulario"><button>FORMULARIÓ</button></a>
+         <!--<button>FORMULARIÓ</button> -->
+         <br>
+         <br>
+         <a href="#infocontact"><button>INFORMACIÓN Y CONTACTO</button></a>
+
+      </center>
    </center>
 
    <footer>
-           <center>
-            <form>
-               <h3 id="formulario">FORMULARIO</h3>
-               <label for="number">Numero de embarazos</label>
-               <input id="number" type="number" placeholder="" value="0">
-         
-               <br>
-               <br>
-         
-               <label for="glucosa">Nivel de glucosa (mg/dl)</label>
-               <input id="glucosa" type="number" placeholder="" value="0">
-         
-               
-               <br>
-               <br>
-         
-               <label for="arterial">Presion arterial (mmHg)</label>
-               <input id="arterial" type="number" placeholder="" value="0">
-         
-               
-               <br>
-               <br>
-         
-               <label for="piel">Grosor de piel (mm)</label>
-               <input id="piel" type="number"  value="0">
-   
-               <br>
-               <br>
-         
-               <label for="insulina">Nivel de insulina (mu U/ml)</label>
-               <input id="insulina" type="number"  value="0">
-               
-               
-               <br>
-               <br>
-         
-               <label for="peso">Peso (Kg)</label>
-               <input id="peso" type="number"  value="0">
-               
-               
-               <br>
-               <br>
-         
-               <label for="altura">Altura (cm)</label>
-               <input id="altura" type="number"  value="0">
-               
-               <br>
-               <br>
-         
-               <label for="diabetes">Historial familiar diabetes (%)</label>
-               <input id="diabetes" type="number"  value="0">
-   
-               <br>
-               <br>
-         
-               <label for="años">Edad (años)</label>
-               <input id="años" type="number"  value="0">
-               
-               <br>
-               
-               <button>Enviar</button>
-            </form>
-            
-         </center>   
+      <center>
+         <h1 id="instrucciones">PASOS A REALIZAR</h1>
+         <!--
+               El usuario rellenara un formulario con los siguientes datos
+               (num_embarazos, nivel de glucosa (mg/dl), presión arterial(mmHe),
+               grosor de piel(mm), insulina(), peso(kg), altura(cm), historial familiar de diabetes (%),
+               edad(años)). Dichos datos no se guardaran en la base de datos, solo sirven para dar
+               un resultado al usuario y no para entrenar el algoritmo.
+              -->
+         <h4>A continuación se presentara el siguente formulario para predecir el nivel de glucosa en sangre en pacientes embarazadas, </h4>
+         <h4>para obtener resultados coherentes es necesario introducir los siguente datos como se indica a continuación:</h4>
+         <p>Numero de embarazos: Numero de veces que la paciente a estado embarazada. </p>
+         <p>Presión arterial(mmHe): La presión diastólica en sangre.  </p>
+         <p>Grosor de piel(mm): Es el grosor de piel del triceps. </p>
+         <!-- <p>Insulina(muU/ml): </p>-->
+         <p>Peso(kg): Peso actual del paciente en ayunas. </p>
+         <p>Altura(cm): Altura actual del paciente. </p>
+         <!-- <p>Historial familiar de diabetes (%):</p> -->
+         <p>Edad(años): Edad actual del paciente.</p>
+         <form>
+            <h3 id="formulario">FORMULARIO</h3>
+            <label for="number">Numero de embarazos</label>
+            <input id="number" type="number" placeholder="" value="0">
+
+            <br>
+            <br>
+
+            <label for="arterial">Presion arterial (mmHg)</label>
+            <input id="arterial" type="number" placeholder="" value="0">
+
+
+            <br>
+            <br>
+
+            <label for="piel">Grosor de piel (mm)</label>
+            <input id="piel" type="number" value="0">
+
+
+            <br>
+            <br>
+
+            <label for="peso">Peso (Kg)</label>
+            <input id="peso" type="number" value="0">
+
+
+            <br>
+            <br>
+
+            <label for="altura">Altura (cm)</label>
+            <input id="altura" type="number" value="0">
+
+            <br>
+            <br>
+
+
+            <label for="años">Edad (años)</label>
+            <input id="años" type="number" value="0">
+
+            <br>
+            <!--crar un alert para confirmar si los datos introducidos son correctos o no-->
+            <button>Enviar</button>
+         </form>
+         <h1 id="infocontact">INFORMACIÓN Y CONTACTO</h1>
+         <div>
+            <p>Descripcón de la empresa</p>
+         </div>
+         <div>
+            <h3>Mohamed Rifi</h3>
+         </div>
+         <div>
+            <h3>Dylan Aragon</h3>
+         </div>
+         <div>
+            <h3>Diego Quintero</h3>
+         </div>
+         <div>
+            <h3>Misael Zamorano</h3>
+         </div>
+      </center>
    </footer>
-           
+
 
 </body>
+
 </html>
