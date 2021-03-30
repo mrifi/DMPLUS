@@ -12,9 +12,33 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body class="is-preload">
-
+		<script>
+			$(function(){
+				$("#btn_prediccion").click(function(){
+					var numeroEmbarazo = $("#number").val();
+					var presionArterial = $("#arterial").val();
+					var mmPiel = $("#piel").val();
+					var pesoP = $("#peso").val();
+					var alturaP = $("#altura").val();
+					var edadP = $("#edad").val();
+					$.post("http://127.0.0.1:5000/guardar/",
+					{
+						"nEmbarazo": numeroEmbarazo,
+						"pArterial": presionArterial,
+						"mmPiel": mmPiel,
+						"peso" : pesoP,
+						"altura": alturaP,
+						"edad": edadP
+					},
+					function(data, status){
+						alert("Data: " + data + "\nStatus: " + status);
+					});
+				}); 
+			}); 
+		</script>
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -73,31 +97,31 @@
 									   <div class="linea">
 										  <div class="cubo">
 											 <label for="number">Numero de embarazos</label>
-											 <input id="number" type="number" placeholder="" value="0">
+											 <input id="number" type="text" placeholder="" value="0">
 										  </div>
 										  <div class="cubo">
 											 <label for="arterial">Presion arterial (mmHg)</label>
-											 <input id="arterial" type="number" placeholder="" value="0">
+											 <input id="arterial" type="text" placeholder="" value="0">
 										  </div>
 									   </div>
 									   <div class="linea">
 										  <div class="cubo">
 											 <label for="piel">Grosor de piel (mm)</label>
-											 <input id="piel" type="number" value="0">
+											 <input id="piel" type="text" value="0">
 										  </div>
 										  <div class="cubo">
 											 <label for="peso">Peso (Kg)</label>
-											 <input id="peso" type="number" value="0">
+											 <input id="peso" type="text" value="0">
 										  </div>
 									   </div>
 									   <div class="linea">
 										  <div class="cubo">
 											 <label for="altura">Altura (cm)</label>
-											 <input id="altura" type="number" value="0">
+											 <input id="altura" type="text" value="0">
 										  </div>
 										  <div class="cubo">
 											 <label for="edad">Edad (años)</label>
-											 <input id="edad" type="number" value="0">
+											 <input id="edad" type="text" value="0">
 										  </div>
 									   </div> <input type="button" value="Predicción" id="btn_prediccion">
 									</form>
