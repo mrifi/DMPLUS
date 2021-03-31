@@ -1622,6 +1622,170 @@ input, select, textarea {
 			}
 
 		}
+/*CONTACT*/
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	background-color: rgba(27, 31, 34, 0.85)
+}
+/* dylan */
+.img-content .img3{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(dylan.jpeg);
+	background-size: cover;
+	transition: .2s;
+}
+
+.img-content:hover .img3{
+	background-position-y: -76px;
+}
+
+/* MOHAMED */
+.img-content .img2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(rifi.jpg);
+	background-size: cover;
+	transition: .2s;
+}
+
+.img-content:hover .img2{
+	background-position-y: -76px;
+}
+/* Misael */
+.img-content .img1{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(Misael.jpeg);
+	background-size: cover;
+	transition: .2s;
+}
+.img-content:hover .img1{
+	background-position-y: -76px;
+}
+/* Diego */
+.img-content{
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	width: 350px;
+	height: 450px;
+	box-shadow: 0 0 5px 2px rgba(0,0,0,.2);
+}
+
+.img-content .img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(Diego.jpeg);
+	background-size: cover;
+	transition: .2s;
+}
+.img-content:hover .img{
+	background-position-y: -76px;
+}
+
+.img-content .info{
+	position: absolute;
+	bottom: -150px;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 150px;
+	padding: 1px 5px;
+	text-align: center;
+	z-index: 10;
+	transition: .2s;
+}
+
+.img-content:hover .info{
+	bottom: 0;
+}
+/* cambio el color del nombre*/
+.img-content .info h2{
+	color: #000000;
+}
+.img-content .info h4{
+	color: #929292;
+}
+
+.img-content .social{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+	transition: 3s;
+}
+
+.img-content:hover .social{
+	background: rgba(0, 0, 0, -4);
+}
+
+.img-content .social ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+.img-content .social ul li{
+	display: inline-block;
+	text-align: center;
+	margin: 0 6px;
+	transform: translate(300px);
+	opacity: 0;
+	transition: .4s;
+}
+
+
+.img-content .social ul li a{
+	display: block;
+	line-height: 40px;
+	color: #333;
+	background: #fff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.img-content .social ul li a i{
+	transition: .3s;
+}
+
+
+.img-content .social ul li:hover i{
+	transform: rotate(360deg);
+}
+
+
+.img-content:hover .social ul li:nth-child(1){
+	transform: translateY(0px);
+	opacity: 1;
+	transition-delay: 0s;
+}
+.img-content:hover .social ul li:nth-child(2){
+	transform: translateY(0px);
+	opacity: 1;
+	transition-delay: 0s;
+}
 
 /* Footer */
 
