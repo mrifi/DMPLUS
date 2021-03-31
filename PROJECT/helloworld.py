@@ -1,4 +1,9 @@
 from flask import Flask, jsonify, request as req
+import pandas as pd
+import statsmodels.api as sm
+from sklearn.preprocessing import StandardScaler
+
+
 app = Flask(__name__)
 
 @app.route('/')
@@ -27,5 +32,17 @@ def guardarDatos():
     peso = req.form["peso"],
     altura = req.form["altura"],
     edad = req.form["edad"]
-    #guardar en base de datos
+    ###Importar CSV
+    df = pd.read_csv('C:\\Users\\Matí\\Desktop\\DMPLUS\\PROJECT\\diabetes.csv')
+    X = df[['Pregnancies','BloodPressure','SkinThickness','BMI','Insulin','Age']]
+    y = df['Glucose']
+    X = sm.add_constant(X)
+    est = sm.OLS(y, X).fit()
+    print(est.summary())
+    params = []
+    for param in est.params:
+        params.append(param)
+        print(param)
     return str((nEmbarazo,pArterial,mmPiel,peso,altura,edad))
+
+
