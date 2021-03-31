@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request as req
 import pandas as pd
 import statsmodels.api as sm
 from sklearn.preprocessing import StandardScaler
+from Ubicacion_csv import Ubicacion_csv
 
 
 app = Flask(__name__)
@@ -33,7 +34,8 @@ def guardarDatos():
     altura = req.form["altura"],
     edad = req.form["edad"]
     ###Importar CSV
-    df = pd.read_csv('C:\\Users\\Matí\\Desktop\\DMPLUS\\PROJECT\\diabetes.csv')
+    file_path = str(Ubicacion_csv())
+    df = pd.read_csv(file_path)
     X = df[['Pregnancies','BloodPressure','SkinThickness','BMI','Insulin','Age']]
     y = df['Glucose']
     X = sm.add_constant(X)
@@ -43,6 +45,7 @@ def guardarDatos():
     for param in est.params:
         params.append(param)
         print(param)
+    ##Agregar fórmula de regresión multivariable
     return str((nEmbarazo,pArterial,mmPiel,peso,altura,edad))
 
 
