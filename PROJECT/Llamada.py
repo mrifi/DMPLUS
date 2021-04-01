@@ -32,7 +32,8 @@ def guardarDatos():
     mmPiel = req.form["mmPiel"],
     peso = req.form["peso"],
     altura = req.form["altura"],
-    edad = req.form["edad"]
+    edad = req.form["edad"],
+    insulina = req.form["insulina"]
     ###Importar CSV
     file_path = str(Ubicacion_csv())
     df = pd.read_csv(file_path)
