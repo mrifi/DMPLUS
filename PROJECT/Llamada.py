@@ -45,6 +45,8 @@ def guardarDatos():
     for param in est.params:
         params.append(param)
         print(param)
+    bmi = (peso/((altura/100)**2))
+    pronostico = (nEmbarazo*params[1])+(pArterial*params[2])+(mmPiel*params[3])+(bmi*params[4])+()
     ##Agregar fórmula de regresión multivariable
     return str((nEmbarazo,pArterial,mmPiel,peso,altura,edad))
 
