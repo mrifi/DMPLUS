@@ -1029,6 +1029,7 @@ input, select, textarea {
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		width: 207px;
 	}
 
 		input[type="submit"]:hover,
