@@ -145,6 +145,7 @@ input, select, textarea {
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
+		height: 45px;
 	}
 
 	a {
@@ -389,6 +390,7 @@ input, select, textarea {
 	input[type="password"],
 	input[type="email"],
 	input[type="tel"],
+	input[type="number"],
 	select,
 	textarea {
 		-moz-appearance: none;
