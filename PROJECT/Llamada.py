@@ -80,6 +80,6 @@ def guardarDatos():
     pronostico = (nEmbarazoDato[0]*params[1])+(pArterialDato[0]*params[2])+(mmPielDato[0]*params[3])+(bmi*params[4])+(insulinaDato*params[5])+(edadDato[0]*params[6])+params[0]
     ##Agregar fórmula de regresión multivariable
     print(pronostico)
-    return str(pronostico)
+    return str(int(pronostico))+"(mg/dl)"
 
 
