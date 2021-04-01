@@ -34,6 +34,15 @@ def guardarDatos():
     altura = req.form["altura"],
     edad = req.form["edad"],
     insulina = req.form["insulina"]
+
+    nEmbarazo = int(nEmbarazo[0]),
+    pArterial =int(pArterial[0]),
+    mmPiel =int(mmPiel[0]),
+    peso = int(peso[0]),
+    altura = int(altura[0]),
+    edad = int(edad[0]),
+    insulina = int(insulina[0])
+
     ###Importar CSV
     file_path = str(Ubicacion_csv())
     df = pd.read_csv(file_path)
@@ -47,8 +56,9 @@ def guardarDatos():
         params.append(param)
         print(param)
     bmi = (peso/((altura/100)**2))
-    pronostico = (nEmbarazo*params[1])+(pArterial*params[2])+(mmPiel*params[3])+(bmi*params[4])+()
+    pronostico = (nEmbarazo*params[1])+(pArterial*params[2])+(mmPiel*params[3])+(bmi*params[4])+(insulina*params[5])+(edad*params[6])+params[0]
     ##Agregar fórmula de regresión multivariable
-    return str((nEmbarazo,pArterial,mmPiel,peso,altura,edad))
+    print(pronostico)
+    return str(pronostico)
 
 
