@@ -37,7 +37,7 @@ def guardarDatos():
     edad =      int(req.form["edad"])
     insulina =  int(req.form["insulina"])
 
-    ###Importar CSV
+    ###Importar CSV.
     file_path = str(Ubicacion_csv())
     df = pd.read_csv(file_path)
     x = df[['BloodPressure','SkinThickness','BMI','Insulin','Age']].replace(0, np.NaN)
