@@ -20,7 +20,7 @@ footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
@@ -599,9 +599,13 @@ input, select, textarea {
 			border-radius: 0;
 			padding: 0;
 		}
-
+	
 /* Icon */
-
+	
+	#header .dmplus{
+		width: 50px;
+		height: 50px;
+	}
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -1239,7 +1243,13 @@ input, select, textarea {
 		}
 
 /* Header */
-
+		
+	.logo > img{
+		width: 88px;
+		height: 88px;
+		border-radius: 100%;
+		position: relative;
+	}
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1325,6 +1335,7 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+				background-color: rgba(27, 31, 34, 0.85)
 			}
 
 				#header .content .inner > :last-child {
@@ -1833,3 +1844,19 @@ input, select, textarea {
 		.cubo{ 
 			display: inline-block; 
 		}
+
+		.modal-contenido{
+			background-color:aqua;
+			width:300px;
+			padding: 10px 20px;
+			margin: 20% auto;
+			position: relative;
+		  }
+		  .modal{
+			background-color: rgba(0,0,0,.8);
+			position:fixed;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;  
+		  }

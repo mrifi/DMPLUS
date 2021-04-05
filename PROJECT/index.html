@@ -45,7 +45,7 @@
 						"insulina": insulina
 					},
 					function (data, status) {
-						alert("Data: " + data + "\nStatus: " + status);
+						alert("Este es el resultado de nuestra predicción:  " + data + "\nCon estos datos que te proporcionamos deberá acudir a un especialista. \nPor lo que tenemos entendido los valores normales son de: 80 - 120 mg/dl");
 					});
 			});
 		});
@@ -56,12 +56,12 @@
 		<!-- Header -->
 		<header id="header">
 			<div class="logo">
-				<span class="icon fa-gem"></span>
+				<img src="assets/css/DM+2.png"/>
 			</div>
 			<div class="content">
 				<div class="inner">
 					<h1>DMPLUS</h1>
-					<p>Sabias que La diabetes gestacional es un tipo de diabetes que aparece por primera vez durante el
+					<p>Sabias que la diabetes gestacional es un tipo de diabetes que aparece por primera vez durante el
 						embarazo en mujeres embarazadas que nunca antes padecieron esta enfermedad.<br>
 						En algunas mujeres, la diabetes gestacional puede afectarles en más de un embarazo.La diabetes
 						gestacional por lo general aparece a la mitad del embarazo.</p>
@@ -71,8 +71,8 @@
 				<ul>
 					<li><a href="#intro">Instrucciones</a></li>
 					<li><a href="#work">Formulario</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="#about">Información</a></li>
+					<li><a href="#contact">Contacto</a></li>
 					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
@@ -83,7 +83,7 @@
 
 			<!-- Intro -->
 			<article id="intro">
-				<h2 class="major">Intro</h2>
+				<h2 class="major">Instrucciones</h2>
 				<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 				<p>
 				<h4>A continuación se presentara el siguente formulario para predecir el nivel de glucosa en sangre en
@@ -98,6 +98,7 @@
 				<p>Altura(cm): Altura actual del paciente. </p>
 				<!-- <p>Historial familiar de diabetes (%):</p> -->
 				<p>Edad(años): Edad actual del paciente.</p>
+				<p>Insulina(μ U/ml):Valor de insulina en sangre, lo podras obtener mediante un examen médico</p>
 				<div>
 					</p>
 			</article>
@@ -152,18 +153,17 @@
 
 			<!-- About -->
 			<article id="about">
-				<h2 class="major">About</h2>
+				<h2 class="major">Información</h2>
 				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-				<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at
-					eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-					lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada
-					fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum
-					dolor sit amet.</p>
+				<p>Queremos ayudar a aquellas mujeres que están pensando quedarse embarazadas a tener más información sobre el tema que estamos tratando, la diabetes gestacional.
+					Por otro lado nos hemos dado cuenta de la poca información que tienen las personas sobre este tipo de diabetes, gracias a nuestra ayuda queremos dar más visibilidad a este tema.
+					Es un tema que en un futuro nos puede afectar a todos, directa o indirectamente, por lo que consideramos que es importante conocer el tema. Nosotros no somos médicos así que no podemos ayudar en el sentido de que nosotros no podemos dar un tratamiento especializado para evitar este problema.
+				</p>
 			</article>
 
 			<!-- Contact -->
 			<article id="contact">
-				<h2 class="major">Contact</h2>
+				<h2 class="major">Contacto</h2>
 				<div class="container">
 					<!-- Diego -->
 					<div class="img-content">
@@ -230,12 +230,7 @@
 				</div>
 		</div>
 
-		<ul class="icons">
-			<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-			<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-		</ul>
+		
 		</article>
 
 	</div>
