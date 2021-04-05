@@ -599,9 +599,13 @@ input, select, textarea {
 			border-radius: 0;
 			padding: 0;
 		}
-
+	
 /* Icon */
-
+	
+	#header .dmplus{
+		width: 50px;
+		height: 50px;
+	}
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
@@ -1239,7 +1243,13 @@ input, select, textarea {
 		}
 
 /* Header */
-
+		
+	.logo > img{
+		width: 88px;
+		height: 88px;
+		border-radius: 100%;
+		position: relative;
+	}
 	#header {
 		display: -moz-flex;
 		display: -webkit-flex;
