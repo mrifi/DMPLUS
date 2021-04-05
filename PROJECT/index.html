@@ -45,7 +45,7 @@
 						"insulina": insulina
 					},
 					function (data, status) {
-						alert("Este es el resultado de nuestra predicción:  " + data + "\nCon estos datos que te proporcionamos deberá acudir a un especialista. \nPor lo que tenemos entendido los valores normales son de: 80 - 120 mg/dl");
+						document.getElementById("dato").innerHTML = data;
 					});
 			});
 		});
@@ -145,7 +145,8 @@
 								<label for="insulina">Insulina</label>
 								<input id="insulina" type="number" value="">
 							</div>
-						<input type="button" value="Predicción" id="btn_prediccion">
+									<input type="button" value="Predicción" id="btn_prediccion" onclick="location.href='#prediccion';">
+									<!-- <li><a href="#prediccion">Predición</a></li> -->
 						</div>
 					</form>
 				</div>
@@ -161,6 +162,16 @@
 				</p>
 			</article>
 
+			<!-- Resultado Predicción-->
+			<article id="prediccion">
+				<h2 class="major">Predición</h2>
+				<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+				<p>
+					ESTO ES UNA PRUEBBBBA!!!!
+				</p>
+				<div id="dato"> </div>
+			</article>
+			
 			<!-- Contact -->
 			<article id="contact">
 				<h2 class="major">Contacto</h2>
